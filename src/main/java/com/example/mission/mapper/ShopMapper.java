@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+
+// 필요한 정보만 출력 하기위해서 따로 Dto 생성
 public class ShopMapper {
     public static ShopDto convertToDto(Shop shop) {
         ShopDto shopDto = new ShopDto();

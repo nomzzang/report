@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3306/kyu
+    driver-class-name: org.mariadb.jdbc.Driver
+    username : user
+    password: 3094
+
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  devtools:
+    livereload:
+      enabled: true
+
+
+  thymeleaf:
+    cache: false

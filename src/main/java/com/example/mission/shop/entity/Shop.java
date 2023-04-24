@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 @Data
 @Entity
 public class Shop {
-
+// 엔티티 설정
     @Id
     private String shopId;
     private String shopPassword;

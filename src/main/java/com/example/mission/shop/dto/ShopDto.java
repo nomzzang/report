@@ -13,7 +13,7 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @Data
 public class ShopDto {
-
+// 웹에 표출줄 자료를 따로 정리
     @Id
     private String shopName;
     private String shopLocation;

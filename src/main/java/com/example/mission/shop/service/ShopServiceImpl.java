@@ -22,7 +22,7 @@ public class ShopServiceImpl implements ShopService{
 
     @Override
     public List<ShopDto> selectAll() {
-
+// 웹에서 전체 데이터 출력 할때 맵퍼를 이용해서 출력
         List<Shop> shops = shopRepository.findAll();
         return ShopMapper.convertToDtoList(shops);
 
@@ -31,7 +31,7 @@ public class ShopServiceImpl implements ShopService{
 
     @Override
     public boolean register(ShopRegister shopRegister){
-
+// 상점 등록
         Optional<Shop> optionalShop = shopRepository.findById(shopRegister.getShopId());
         if (optionalShop.isPresent()){
             return false;
